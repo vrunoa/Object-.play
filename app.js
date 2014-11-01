@@ -58,7 +58,7 @@ function solution(T) {
 
 };
 
-/* La parte mas ovbia */
+/* La parte mas obvia */
 
 console.log(solution(T)); // La respuesta correcta es 7
 
