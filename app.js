@@ -54,9 +54,24 @@ function solution(T) {
 
 	/* Aqui hay que programar la solucion */
 
-	return; // Recuerden retornar el valor
+	return count(T); // Recuerden retornar el valor
 
 };
+
+function count(s) {
+  if (typeof s == 'number') return 1;
+  if(!s) return 0;
+  if(s.length) return 0;
+  if (typeof s == 'object') {
+    var l = 0;
+    for(var i in s) {
+      l += count(s[i]);
+    }
+    return l;
+  }
+
+  return 0;
+}
 
 /* La parte mas obvia */
 
