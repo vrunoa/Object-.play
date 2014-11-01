@@ -14,3 +14,5 @@ Hay que programar una solución que cuente la cantidad de `typeof x = 'number'` 
 	};
 
 **¡¡¡Al primero que lo resuelva bien, algún premio le vamos a dar!!!**
+____________________________________________________________________________
+**Las soluciones van via Pull Request.**
