@@ -60,16 +60,11 @@ function solution(T) {
 
 function count(s) {
   if (typeof s == 'number') return 1;
-  if(!s) return 0;
-  if(s.length) return 0;
-  if (typeof s == 'object') {
+  if (s instanceof Object && !(s instanceof Array)) {
     var l = 0;
-    for(var i in s) {
-      l += count(s[i]);
-    }
+    for(var i in s) l += count(s[i]);
     return l;
   }
-
   return 0;
 }
 
